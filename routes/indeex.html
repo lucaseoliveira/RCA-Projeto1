@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <% include include/header %>
+
+    </header>
+
+    <section id="dash">
+        <% include include/sidebar %>
+
+        <section id="dashContent">
+            <div id="linha1">
+                <section class="dashBox" id="aquariuNumero">
+                    <span class="dashLabel">Aquario:</span>
+                    <span id="qtdDado" class="dashDado">1</span>
+                    <i class="fas fa-fish iconeTemp "></i>
+                </section>
+
+                <section class="dashBox" id="tempMedidor">
+                    <span class="dashLabel">Temperatura:</span>
+                    <span id="tempDado" class="dashDado">27°</span>
+                    <i class="fas fa-thermometer-half iconeTemp azulTexto"></i>
+                </section>
+
+                <section class="dashBox" id="luminoMedidor">
+                    <span class="dashLabel">Luminosidade:</span>
+                    <span id="luminoDado" class="dashDado">11,11</span>
+                    <i class="fas fa-lightbulb iconeTemp amareloTexto"></i>
+                </section>
+
+            </div>
+            <div id="linha2">
+                <section class="dashBox" id="alimentacao">
+                    <i class="fas fa-utensils iconeTemp "></i>
+                    <span class="dashLabel">Proxima Alimentação:</span>
+                    <div class="clear"></div>
+                    <div id="horaDado" class="dashDado">20:30</div>
+                    <div id="dataAlimento">27/04/19</div>
+                    <hr>
+                    <span class="dashLabel">Ultimas Alimentaçôes:</span>
+                    <div>
+                        <table class="tg">
+                            <tr>
+                                <th class="tg-s268">ID</th>
+                                <th class="tg-s268">Hora</th>
+                                <th class="tg-s268">Data</th>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">1</td>
+                                <td class="tg-obcv">20:00</td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">2</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">3</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">4</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">5</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">6</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                            <tr>
+                                <td class="tg-obcv">7</td>
+                                <td class="tg-obcv"></td>
+                                <td class="tg-obcv"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </section>
+                <section class="dashBox" id="graficoLumino">
+                    <span class="dashLabel">Grafico de Luminosidade:</span>
+                    <i class="fas fa-fish iconeTemp "></i>
+                    <canvas id="graficoLuminosidade"></canvas>
+
+                </section>
+
+            </div>
+            <section class="dashBox" id="graficoTemp">
+                    <span class="dashLabel">Grafico de Temperatura:</span>
+                    <i class="fas fa-fish iconeTemp"></i>
+                    <canvas id="graficoTemperatura"></canvas>
+                </section>
+
+        </section>
+
+
+
+
+    </section>
+
+
+</body>
+<script src="js/scripts.js"></script>
+</html>
