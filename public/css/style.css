@@ -1,0 +1,419 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #f9f9f9 ;
+    font-family: 'Lato', sans-serif;
+    min-height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.123);
+    z-index: 2;
+}
+header a{
+    color: black;
+}
+aside{
+    background-color: #71d0ff ;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.123);
+    padding-top: 70px;
+    padding-left: 10px;
+    
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+   
+}
+
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+}
+.tg td{
+    
+    padding:3px 3px;
+    overflow:hidden;
+    word-break:normal;
+  
+}
+
+.tg th{
+    font-weight:700;
+    padding:3px 3px;
+    overflow:hidden;
+    word-break:normal;  
+}
+
+.tg tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+
+.tg .tg-obcv:not(:nth-child(3)){
+    text-align:left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tg .tg-s268{
+    text-align:left
+}
+
+
+
+#logo{
+    margin-left: 20px;
+    font-size: 18px;
+}
+#headerBarra{
+    float: right;
+    margin-right: 20px;
+}
+.azulTexto{color: #4dc4ff }
+.amareloTexto{color: #ffc44d }
+.vermelhoTexto{color: #ee4d4d  }
+
+#dash{
+    min-height: 100%;
+    
+}
+
+#dashContent, #dashForm{
+    padding: 70px 10px 10px 10px;
+  
+    width: 80%;
+    margin-left: 20%;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#dashContent{
+    display: grid;
+    grid-template-rows: 0.6fr 2fr 3fr;
+
+}
+#linha1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr ;
+}
+#linha2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.dashBox{
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    padding: 10px;
+    margin: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.dashBox:hover{
+    -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.219);
+            box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.219);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+
+
+.dashLabel{
+    font-size: 16px;
+    display: block;
+}
+
+.dashDado{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.iconeTemp{
+    float: right;
+    font-size: 22px;
+}
+#dataAlimento, #horaDado{
+    text-align: center;
+}
+#dataAlimento{
+    font-size: 12px;
+}
+
+#graficoTemperatura{
+    width: 100%;
+   
+}
+#graficoLuminosidade{
+    width: 100%;
+   
+}
+
+.sidebarExpButton{
+    margin-left:10px;
+}
+.sideLabel{
+    font-size: 14px;
+    font-style: italic;
+}
+
+#dashSidebar{
+    width: 20%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    overflow-x: hidden; /* Disable horizontal scroll */ 
+    text-overflow: clip;
+    height: 100%;  
+    
+}
+    
+#dashSidebar a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    color: #161415 ;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    text-overflow: clip;
+    white-space: nowrap;                
+}
+#dashSidebar a i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;
+    line-height: 20px;
+}
+#dashSidebar a:hover{
+    color:white;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#dashSidebar a:hover i{
+    color: #71d0ff;
+    background-color: white;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+ #dashForm table{
+ 
+    width:70%;
+
+ }
+.apagarHorario{
+    border: none;
+    float: right;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    background: transparent;
+    outline: none;
+}
+.apagarHorario:hover{
+    background: #ee4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+ .box30{
+     width: 30%;
+     display: inline-block;
+ }
+
+
+.clear{
+    clear: both;
+}
+
+/* formulario */
+.corpo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.534);
+}
+.corpo input {
+    color: white;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    box-shadow: none;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+.corpo button{
+    color: white;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    border: none;
+    padding: 5px;
+    background-color: #0000006e;
+}
+.corpo button:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+
+.corpo input:focus, .corpo button:focus {
+    outline: none;
+  }
+  
+.corpo input:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.corpo button {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  #loginBox {
+    padding: 10px;
+    max-width: 980px;
+    background-color: #4dc4ff;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+  }
+  .loginHeader {
+    text-align: center;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+  }
+  .loginBody {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .loginBody button {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+.aquaCadastrados{
+    max-width: 100%;
+    text-align: center;
+}
+.aquaBox{
+    display: inline-block;
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.671);
+    text-decoration: none;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.aquaBox:hover{
+   background-color: #ffffff36;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+.aquaBox h1{
+    margin: -10px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.notificacaoIcone{
+    position: relative;
+    margin: 0 10px;
+}
+#notificacao{
+    background-color: #ee4d4d;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+#notificacaoBox{
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    width: 200px;
+    background-color: #71d0ff;
+    padding: 10px;
+    top: 20px;
+    right: 0px;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.123);
+    display: none;
+}
+#notificacaoBox hr{
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tipoNotifica{
+    font-size: 12px;
+    background-color:#f9f9f9;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    color: black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block
+}
+@media screen and (max-width: 900px) {
+    #dashContent{
+        width: 100%;
+        margin-left: 0%;
+        grid-template-rows: auto;
+    }
+    #dashSidebar{
+        width: 0%;
+    }
+    #linha1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #linha2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+ 
+
+}
