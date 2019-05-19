@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <a class="fas fa-bars sidebarExpButton" onclick="sidebarExp();" ></a>
+        <span id="logo">Jaru<b>Gay</b></span>
+        <span id="headerBarra"><i class="far fa-bell"></i> Bem Vindo Boiola</span>
+
+    </header>
+
+    <section id="dash">
+        <aside id="dashSidebar">
+            <a href="hh"><i class="fas fa-home"></i>Pagina Inicial</a>
+            <div class="sideLabel">Informações</div>
+            <a href="#"><i class="fas fa-history"></i>Historico</a>
+            <div class="sideLabel">Configurações</div>
+            <a href="#"><i class="fas fa-cog"></i>Gerais</a>
+            <a href="#"><i class="fas fa-utensils"></i>Alimentação</a>
+            <a href="#"><i class="fas fa-thermometer-half"></i>Temperatura</a>
+            <a href="#"><i class="fas fa-lightbulb"></i>Luminosidade</a>
+            <a href="#"><i class="fas fa-seedling"></i>Plantas</a>
+        </aside>
+
+        <section id="dashForm">
+                <span class="dashLabel">Controle de Alimentação:</span>
+                <div class="dashBox box30">
+                    <span class="dashLabel">Horario Cadastrado:</span>
+                    <button class="apagarHorario"><i class="fas fa-trash-alt" onclick="apagarHorario()"></i></button>
+                    <span id="tempDado" class="dashDado">12:30</span>
+                </div>
+                
+                <span class="dashLabel">Adicionar Novo:</span>
+                <form name="horario">
+                    <input type="time" name="horarioCampo" required>
+                    <button onclick="novoHorario()">Adicionar</button>
+                
+                </form>
+                
+               
+        </section>
+
+
+
+
+    </section>
+
+
+</body>
+<script src="js/scripts.js"></script>
+<script src="js/configuracoes.js"></script>
+</html>
